@@ -1,6 +1,11 @@
 :root {
   font-family: 'Roboto', 'sans-serif';
   font-size: 62.5%;
+
+  --hue: 194;
+  --primary-color: #42d3ff;
+  --backgound-color: hsla(194, 100%, 63%, 0.13);
+  --text-color: #ffffff;
 }
 
 * {
@@ -15,16 +20,21 @@ body {
   place-items: center;
 
   background: #121214;
-  color: #ffffff;
+  color: var(--text-color);
 
   width: 100vw;
   height: 100vh;
 }
 
 button {
+  display: block;
   background: transparent;
   border: none;
   cursor: pointer;
+}
+
+.hiden {
+  display: none;
 }
 
 .wrapper {
@@ -40,16 +50,26 @@ h1 {
   text-align: center;
 }
 
+i {
+  color: var(--text-color);
+  font-size: 6rem;
+}
+
+:where(.play, .pause, .unmute) i {
+  color: var(--primary-color);
+}
+
 .wrap {
   display: flex;
   gap: 3.2rem;
 
-  background: rgba(66, 211, 255, 0.13);
+  background: var(--backgound-color);
   border-radius: 9999px;
   padding: 2.2rem 4rem;
 }
 
-.mute {
+.mute,
+.unmute {
   position: absolute;
   bottom: 3.2rem;
   right: 3.2rem;
