@@ -7,5 +7,9 @@ export let Selectors = {
   stop: document.querySelector('.stop'),
   setTime: document.querySelector('.setTime'),
   unmute: document.querySelector('.unmute'),
-  mute: document.querySelector('.mute')
+  mute: document.querySelector('.mute'),
+  modal: document.querySelector('.modal'),
+  form: document.querySelector('#form'),
+  modalBtn: document.querySelector('#modalBtn'),
+  content: document.querySelector('.content')
 }

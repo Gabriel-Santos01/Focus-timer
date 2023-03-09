@@ -20,29 +20,40 @@
   </head>
   <body>
     <div class="wrapper">
-      <h1 class="time">
-        <span class="minutes">00</span>:<span class="seconds">00</span>
-      </h1>
-      <div class="wrap">
-        <button class="play">
-          <i class="ph-play-circle"></i>
+      <div class="content">
+        <div class="teste"></div>
+        <h1 class="time">
+          <span class="minutes">00</span>:<span class="seconds">00</span>
+        </h1>
+        <div class="wrap">
+          <button class="play">
+            <i class="ph-play-circle"></i>
+          </button>
+          <button class="pause hiden">
+            <i class="ph-pause-circle"></i>
+          </button>
+          <button class="stop hiden">
+            <i class="ph-stop-circle-fill"></i>
+          </button>
+          <button class="setTime">
+            <i class="ph-timer"></i>
+          </button>
+        </div>
+        <button class="unmute">
+          <i class="ph-speaker-high"></i>
         </button>
-        <button class="pause hiden">
-          <i class="ph-pause-circle"></i>
-        </button>
-        <button class="stop hiden">
-          <i class="ph-stop-circle-fill"></i>
-        </button>
-        <button class="setTime">
-          <i class="ph-timer"></i>
+        <button class="mute hiden">
+          <i class="ph-speaker-x"></i>
         </button>
       </div>
-      <button class="unmute">
-        <i class="ph-speaker-high"></i>
-      </button>
-      <button class="mute hiden">
-        <i class="ph-speaker-x"></i>
-      </button>
+
+      <div class="modal hiden">
+        <h2>Quantos minutos?</h2>
+        <form id="form">
+          <input id="setTime" type="number"></input>
+          <button id="modalBtn" type="button">Enviar</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
