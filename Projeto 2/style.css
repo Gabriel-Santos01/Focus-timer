@@ -1,0 +1,151 @@
+:root {
+  font-size: 63%; /*10px*/
+  text-decoration: node;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(227, 255, 248, 0) 82.08%,
+    rgba(227, 255, 248, 0.38) 100%
+  );
+
+  margin-inline: 12rem;
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 4.8rem;
+}
+
+nav li {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+
+  color: #1f1534;
+  opacity: 0.6;
+}
+
+nav li:hover {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+
+  color: #1f1534;
+}
+
+header {
+  padding-bottom: 8rem;
+}
+
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+
+  color: #89c5cc;
+}
+
+main img {
+  max-width: 41.7rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer {
+  margin-top: 8rem;
+}
+
+h1 {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 4.9rem;
+  line-height: 5.6rem;
+
+  max-width: 49rem;
+}
+
+h1 span {
+  font-weight: 700;
+  font-size: 4.9rem;
+  line-height: 5.6rem;
+  color: #89c5cc;
+}
+
+section p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  color: #7d7987;
+
+  margin: 4rem 0;
+  max-width: 40rem;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.4rem 3.2rem 1.5rem;
+  gap: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  text-transform: uppercase;
+
+  color: #f9f9f9;
+  background: #69b99d;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5ea38b;
+}
+
+footer {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+#balls {
+  max-width: 9.8rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
