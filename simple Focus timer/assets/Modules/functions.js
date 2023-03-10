@@ -10,7 +10,10 @@ export const functions = {
     target2.classList.remove('hidden')
   },
   clearDisplay(Selectors) {
-    Selectors.min.textContent = '00'
+    Selectors.min.textContent = String(Selectors.inputTime.value).padStart(
+      2,
+      '0'
+    )
     Selectors.sec.textContent = '00'
   }
 }
