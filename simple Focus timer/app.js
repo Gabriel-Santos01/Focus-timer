@@ -91,5 +91,5 @@ function countdown() {
     Selectors.sec.textContent = String(seconds - 1).padStart(2, '0')
 
     countdown()
-  }, 50)
+  }, 1000)
 }
