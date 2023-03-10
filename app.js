@@ -1,6 +1,8 @@
 import { Selectors } from './assets/Modules/selectors.js'
 import { functions } from './assets/Modules/functions.js'
 
+let timeTimeOut
+
 Selectors.play.addEventListener('click', () => {
   functions.btnSwitch(
     Selectors.play,
@@ -8,6 +10,8 @@ Selectors.play.addEventListener('click', () => {
     Selectors.setTime,
     Selectors.stop
   )
+
+  countdown()
 })
 
 Selectors.pause.addEventListener('click', () => {
@@ -31,37 +35,27 @@ Selectors.unmute.addEventListener('click', () => {
   functions.simpleSwitch(Selectors.unmute, Selectors.mute)
 })
 
-let teste = document.querySelector('#setTime')
-
 Selectors.setTime.addEventListener('click', () => {
-  Selectors.modal.classList.remove('hiden')
-  Selectors.content.classList.add('hiden')
-})
-
-Selectors.play.addEventListener('click', () => {
-  countdown()
+  functions.btnSwitch(Selectors.content, Selectors.modal)
 })
 
 Selectors.pause.addEventListener('click', () => {
-  clearTimeout(timeTimeout)
+  clearTimeout(timeTimeOut)
 })
 
 Selectors.modalBtn.addEventListener('click', () => {
   event.preventDefault()
-  Selectors.min.textContent = String(teste.value)
-  Selectors.modal.classList.toggle('hiden')
-  Selectors.content.classList.toggle('hiden')
+  Selectors.min.textContent = String(Selectors.inputTime.value).padStart(2, '0')
+  functions.btnSwitch(Selectors.modal, Selectors.content)
 })
 
 Selectors.stop.addEventListener('click', () => {
-  Selectors.min.textContent = '00'
-  Selectors.sec.textContent = '00'
+  clearTimeout(timeTimeOut)
+  functions.clearDisplay(Selectors)
 })
 
-let timeTimeout
-
 function countdown() {
-  timeTimeout = setTimeout(function () {
+  timeTimeOut = setTimeout(function () {
     let seconds = Number(Selectors.sec.textContent)
     let minutes = Number(Selectors.min.textContent)
 

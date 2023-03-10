@@ -9,7 +9,7 @@ export let Selectors = {
   unmute: document.querySelector('.unmute'),
   mute: document.querySelector('.mute'),
   modal: document.querySelector('.modal'),
-  form: document.querySelector('#form'),
   modalBtn: document.querySelector('#modalBtn'),
-  content: document.querySelector('.content')
+  content: document.querySelector('.content'),
+  inputTime: document.querySelector('#inputTime')
 }

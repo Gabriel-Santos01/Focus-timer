@@ -33,6 +33,10 @@ button {
   cursor: pointer;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .wrapper {
   display: flex;
   gap: 1.6rem;
@@ -92,6 +96,10 @@ i {
   gap: 2rem;
 }
 
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .modal input {
   font-size: 2rem;
   width: 100%;
@@ -106,8 +114,4 @@ i {
   padding: 1rem;
   border-radius: 99999px;
   background: #42d3ff;
-}
-
-.hiden {
-  display: none;
 }
